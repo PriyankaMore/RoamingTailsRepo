@@ -11,10 +11,7 @@
 	db.createCollection("UserProfile")
 	db.createCollection("Restaurants")
 	
-#Copying CSV files in ec2 instance
-	$ scp -i /G/AWS/HrishiMacKey.pem /C/Users/LENOVO/Desktop/Restaurants.csv ec2-user@ec2-54-165-150-76.compute-1.amazonaws.com:/home/ec2-user/Restaurants.csv
-	$ scp -i /G/AWS/HrishiMacKey.pem /C/Users/LENOVO/Desktop/Restaurants.csv ec2-user@ec2-54-165-150-76.compute-1.amazonaws.com:~/.
-	
+
 	
 #Importing files in database
  For local:	mongoimport --db RoamingTails --collection Restaurants --type csv --ignoreBlanks --headerline --file C:\Users\LENOVO\Downloads\Restaurants.csv
